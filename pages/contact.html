@@ -12,9 +12,29 @@
         <h1>Contact Me</h1>
     </header>
     <main>
-        <address></address>
+        <address>555 South Main, Everywhere, Somewhere 99873
+        </address>
         <!-- Address is for the static address -->
-        <section></section>
+        <section>
+            <h2>Have a question?</h2>
+            <!-- by default, the following form has a method ='get' --> 
+            <!-- it is the same as <form action="contact.html" method='get'> --> 
+                <!-- This form will show all information using the address bar (URL)" --> 
+                <!-- The alternative is method='posy' which will not show in the address bar --> 
+            <form action="contact.html"> 
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname">
+                 <label for="email">Email:</label>
+                 <input type ="email" name="email">
+                 <label for="question">Question</label>
+                 <textarea name="question" cols="30" rows="10"></textarea>
+                <!-- There are two ways to create a form button. -->
+                <!-- <input type="button" value="submit"> -->
+                <!--<input type="submit" value="Submit Again"> -->
+                <!-- the above is not recommended -->
+                <button>Submit</button>
+            </form>
+        </section>
         <!-- This section will contain a contact form. -->
     </main>
     <footer>
